@@ -86,14 +86,15 @@ a {
     min-width: 150px;
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    transition: .2s; }
     @media screen and (max-width: 960px) {
       .header .left {
         min-width: 270px;
         flex-direction: row; } }
     @media screen and (max-width: 560px) {
       .header .left {
-        min-width: 200px; } }
+        min-width: 220px; } }
     .header .left .logo-img-container {
       width: 60%; }
       @media screen and (max-width: 960px) {
@@ -183,6 +184,10 @@ a {
         -moz-transition: all .2s linear 0s;
         -webkit-transition: all .2s linear 0s;
         -o-transition: all .2s linear 0s; }
+
+.header.fixed .left {
+  min-width: 180px;
+  transition: .2s; }
 
 .overlay {
   display: none;
