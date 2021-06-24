@@ -292,12 +292,19 @@ a {
       flex-direction: row;
       justify-content: space-between;
       margin-bottom: 50px;
-      width: 100%; }
+      width: 100%;
+      list-style: none; }
       @media screen and (max-width: 960px) {
         .news .inner .card-container {
           flex-wrap: wrap;
           justify-content: flex-start;
           margin-bottom: 0px; } }
+      @media screen and (max-width: 560px) {
+        .news .inner .card-container {
+          overflow-x: auto;
+          white-space: nowrap;
+          display: block;
+          padding: 10%; } }
       .news .inner .card-container .card {
         width: 20%; }
         @media screen and (max-width: 960px) {
@@ -307,8 +314,11 @@ a {
             margin-bottom: 5%; } }
         @media screen and (max-width: 560px) {
           .news .inner .card-container .card {
-            margin-left: 5%;
-            width: 40%; } }
+            margin-left: 10%;
+            margin-bottom: 10%;
+            display: inline-block;
+            width: 60%;
+            height: auto; } }
         @media screen and (max-width: 960px) {
           .news .inner .card-container .card:nth-child(2n) {
             margin-right: 10%; } }
