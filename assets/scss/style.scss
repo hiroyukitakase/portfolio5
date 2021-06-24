@@ -1039,14 +1039,16 @@ a{
         margin-bottom: 10px;
         font-weight: 600;
         @include mq(sp){
-          font-size: 0.9rem;
+          font-size: 0.8rem;
+          letter-spacing: .2em;
         }
       }
       .address{
         margin-bottom: 20px;
         font-weight: 600;
         @include mq(sp){
-          font-size: 0.9rem;
+          font-size: 0.8rem;
+          letter-spacing: .2em;
         }
       }
       .map{
