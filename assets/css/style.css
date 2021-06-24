@@ -187,6 +187,9 @@ a {
   position: relative;
   height: 500px;
   z-index: -1; }
+  @media screen and (max-width: 960px) {
+    .hero {
+      height: 450px; } }
   .hero .letter-container {
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
@@ -402,7 +405,7 @@ a {
         text-align: center; }
         @media screen and (max-width: 560px) {
           .concept .image-frame .title-box .inner .titlecopy {
-            font-size: 0.7rem;
+            font-size: 0.9rem;
             line-height: 2.0;
             letter-spacing: 0rem; } }
       .concept .image-frame .title-box .inner .line-left {
@@ -486,7 +489,11 @@ a {
       padding: 0 5%; } }
   .concept .inner .title {
     display: inline-block;
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    margin-bottom: 50px; }
+    @media screen and (max-width: 960px) {
+      .concept .inner .title {
+        margin-bottom: 30px; } }
   .concept .inner .copy {
     line-height: 1.5;
     margin-bottom: 30px;

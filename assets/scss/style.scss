@@ -246,6 +246,9 @@ a{
   position: relative;
   height: 500px;
   z-index: -1;
+  @include mq(md){
+    height: 450px;
+  }
   .letter-container{
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
@@ -481,7 +484,7 @@ a{
           letter-spacing: .1rem;
           text-align: center;
           @include mq(sp){
-            font-size: 0.7rem;
+            font-size: 0.9rem;
             line-height: 2.0;
             letter-spacing: 0rem;
           }
@@ -571,6 +574,10 @@ a{
     .title{
       display: inline-block;
       font-size: 1.2rem;
+      margin-bottom: 50px;
+      @include mq(md){
+        margin-bottom: 30px;
+      }
     }
     .copy{
       line-height: 1.5;
