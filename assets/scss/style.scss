@@ -34,6 +34,9 @@ body{
   color: #000000;
   position: relative;
   background: #f6f5f4;
+  @include mq(sp){
+    font-weight: 600;
+  }
 }
 
 a{
