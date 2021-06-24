@@ -819,7 +819,8 @@ a {
         margin-bottom: 20px;
         font-weight: 500; }
     .contact-section .inner-upper .subtitle {
-      line-height: 1.5; }
+      line-height: 1.5;
+      text-decoration: underline; }
       @media screen and (max-width: 560px) {
         .contact-section .inner-upper .subtitle {
           font-size: 0.9rem; } }
