@@ -383,7 +383,7 @@ a{
         overflow-x: auto;
       	white-space: nowrap;
         display: block;
-        padding: 10%;
+        padding-left: 10%;
       }
       .card{
         width: 20%;
@@ -404,7 +404,7 @@ a{
             margin-right: 10%;
           }
           @include mq(sp){
-            margin-right: 5%;
+            margin-right: 0;
           }
         }
         .image-container{
