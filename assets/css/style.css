@@ -72,14 +72,13 @@ a {
   .header .left {
     padding-left: 5%;
     width: 12%;
-    max-width: 250px;
     min-width: 150px;
     display: flex;
     flex-direction: column;
     align-items: center; }
     @media screen and (max-width: 960px) {
       .header .left {
-        width: 350px;
+        min-width: 270px;
         flex-direction: row; } }
     .header .left .logo-img-container {
       width: 60%; }
