@@ -418,6 +418,8 @@ a{
       margin: 0 auto;
       @include mq(sp){
         width: 70%;
+        height: 40px;
+        font-size: 1.0rem;
       }
     }
   }
@@ -597,6 +599,8 @@ a{
       float: right;
       @include mq(sp){
         width: 70%;
+        height: 40px;
+        font-size: 1.0rem;
         margin: 0 auto;
         float: none;
       }

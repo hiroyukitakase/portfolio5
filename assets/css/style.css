@@ -344,7 +344,9 @@ a {
       margin: 0 auto; }
       @media screen and (max-width: 560px) {
         .news .inner .btn {
-          width: 70%; } }
+          width: 70%;
+          height: 40px;
+          font-size: 1.0rem; } }
 
 .concept .title {
   display: flex;
@@ -512,6 +514,8 @@ a {
     @media screen and (max-width: 560px) {
       .concept .inner .btn {
         width: 70%;
+        height: 40px;
+        font-size: 1.0rem;
         margin: 0 auto;
         float: none; } }
 
