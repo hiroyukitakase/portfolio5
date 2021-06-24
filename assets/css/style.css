@@ -823,7 +823,7 @@ a {
       text-decoration: underline; }
       @media screen and (max-width: 560px) {
         .contact-section .inner-upper .subtitle {
-          font-size: 0.9rem; } }
+          font-size: 1.1rem; } }
   .contact-section .inner-lower {
     display: flex;
     flex-direction: row;
