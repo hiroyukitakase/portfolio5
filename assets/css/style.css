@@ -822,12 +822,17 @@ a {
         padding-top: 15px;
         margin-bottom: 20px;
         font-weight: 500; }
+        @media screen and (max-width: 560px) {
+          .contact-section .inner-upper .main-title:after {
+            font-weight: 600; } }
     .contact-section .inner-upper .subtitle {
       line-height: 1.5;
       text-decoration: underline; }
       @media screen and (max-width: 560px) {
         .contact-section .inner-upper .subtitle {
-          font-size: 1.1rem; } }
+          font-size: 0.9rem;
+          font-weight: 600;
+          letter-spacing: .1em; } }
   .contact-section .inner-lower {
     display: flex;
     flex-direction: row;
@@ -871,7 +876,8 @@ a {
         margin-bottom: 20px; }
         @media screen and (max-width: 560px) {
           .contact-section .inner-lower .box .copy {
-            font-size: 0.9rem; } }
+            font-size: 0.9rem;
+            font-weight: 600; } }
       .contact-section .inner-lower .box .btn {
         display: flex;
         justify-content: center;
@@ -895,14 +901,18 @@ a {
         @media screen and (max-width: 560px) {
           .contact-section .inner-lower .box .phone {
             font-size: 1.5rem;
-            margin-bottom: 10px; } }
+            margin-bottom: 10px;
+            font-weight: 600; } }
       @media screen and (max-width: 560px) {
         .contact-section .inner-lower .box .hour {
-          font-size: 0.9rem; } }
+          font-size: 0.9rem;
+          font-weight: 600; } }
       .contact-section .inner-lower .box .walk {
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+        font-weight: 600; }
       .contact-section .inner-lower .box .address {
-        margin-bottom: 20px; }
+        margin-bottom: 20px;
+        font-weight: 600; }
       .contact-section .inner-lower .box .map {
         display: flex;
         justify-content: center;

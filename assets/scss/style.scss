@@ -924,18 +924,22 @@ a{
         @include serif_font;
         content: 'CONTACT';
         display: block;
-        // text-align: center;
         font-size: 0.7rem;
         padding-top: 15px;
         margin-bottom: 20px;
         font-weight: 500;
+        @include mq(sp){
+          font-weight: 600;
+        }
       }
     }
     .subtitle{
       line-height: 1.5;
       text-decoration: underline;
       @include mq(sp){
-        font-size: 1.1rem;
+        font-size: 0.9rem;
+        font-weight: 600;
+        letter-spacing: .1em;
       }
     }
   }
@@ -985,6 +989,7 @@ a{
         margin-bottom: 20px;
         @include mq(sp){
           font-size: 0.9rem;
+          font-weight: 600;
         }
       }
       .btn{
@@ -1011,18 +1016,22 @@ a{
         @include mq(sp){
           font-size: 1.5rem;
           margin-bottom: 10px;
+          font-weight: 600;
         }
       }
       .hour{
         @include mq(sp){
           font-size: 0.9rem;
+          font-weight: 600;
         }
       }
       .walk{
         margin-bottom: 10px;
+        font-weight: 600;
       }
       .address{
         margin-bottom: 20px;
+        font-weight: 600;
       }
       .map{
         display: flex;
