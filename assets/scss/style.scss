@@ -452,8 +452,8 @@ a{
       }
     }
     .subtitle{
+      letter-spacing: 0.1em;
       @include mq(sp){
-        letter-spacing: 0.1em;
         font-size: 0.8rem;
       }
     }
@@ -650,7 +650,6 @@ a{
           @include serif_font;
           content: 'LESSON';
           display: block;
-          // text-align: center;
           font-size: 0.7rem;
           padding-top: 5px;
           font-weight: 600;
@@ -658,8 +657,8 @@ a{
         }
       }
       .subtitle{
+        letter-spacing: 0.1em;
         @include mq(sp){
-          letter-spacing: 0.1em;
           font-size: 0.8rem;
         }
       }
@@ -791,8 +790,8 @@ a{
         }
       }
       .subtitle{
+        letter-spacing: 0.1em;
         @include mq(sp){
-          letter-spacing: 0.1em;
           font-size: 0.8rem;
         }
       }
@@ -942,10 +941,10 @@ a{
     }
     .subtitle{
       line-height: 1.5;
+      letter-spacing: .1em;
       text-decoration: underline;
       @include mq(sp){
         font-size: 0.9rem;
-        letter-spacing: .1em;
       }
     }
   }

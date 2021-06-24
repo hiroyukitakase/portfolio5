@@ -373,10 +373,11 @@ a {
       font-weight: 600;
       margin-bottom: 10px;
       letter-spacing: 0.2em; }
-  @media screen and (max-width: 560px) {
-    .concept .title .subtitle {
-      letter-spacing: 0.1em;
-      font-size: 0.8rem; } }
+  .concept .title .subtitle {
+    letter-spacing: 0.1em; }
+    @media screen and (max-width: 560px) {
+      .concept .title .subtitle {
+        font-size: 0.8rem; } }
 
 .concept .image-frame {
   display: flex;
@@ -571,10 +572,11 @@ a {
         padding-top: 5px;
         font-weight: 600;
         letter-spacing: 0.2em; }
-    @media screen and (max-width: 560px) {
-      .lesson .inner .title-left .subtitle {
-        letter-spacing: 0.1em;
-        font-size: 0.8rem; } }
+    .lesson .inner .title-left .subtitle {
+      letter-spacing: 0.1em; }
+      @media screen and (max-width: 560px) {
+        .lesson .inner .title-left .subtitle {
+          font-size: 0.8rem; } }
   .lesson .inner .card {
     position: relative;
     z-index: -1;
@@ -696,10 +698,11 @@ a {
         padding-top: 5px;
         font-weight: 600;
         letter-spacing: 0.2em; }
-    @media screen and (max-width: 560px) {
-      .beginner .inner .title-left .subtitle {
-        letter-spacing: 0.1em;
-        font-size: 0.8rem; } }
+    .beginner .inner .title-left .subtitle {
+      letter-spacing: 0.1em; }
+      @media screen and (max-width: 560px) {
+        .beginner .inner .title-left .subtitle {
+          font-size: 0.8rem; } }
   .beginner .inner .card {
     position: relative;
     height: 500px;
@@ -834,11 +837,11 @@ a {
         font-weight: 600; }
     .contact-section .inner-upper .subtitle {
       line-height: 1.5;
+      letter-spacing: .1em;
       text-decoration: underline; }
       @media screen and (max-width: 560px) {
         .contact-section .inner-upper .subtitle {
-          font-size: 0.9rem;
-          letter-spacing: .1em; } }
+          font-size: 0.9rem; } }
   .contact-section .inner-lower {
     display: flex;
     flex-direction: row;
