@@ -344,7 +344,6 @@ a{
       .subtitle{
         @include mq(sp){
           letter-spacing: 0.1em;
-          font-weight: 600;
           font-size: 0.8rem;
         }
 
@@ -456,7 +455,6 @@ a{
     .subtitle{
       @include mq(sp){
         letter-spacing: 0.1em;
-        font-weight: 600;
         font-size: 0.8rem;
       }
     }
@@ -503,7 +501,6 @@ a{
             font-size: 0.8rem;
             line-height: 2.0;
             letter-spacing: 0.2em;
-            font-weight: 600;
           }
         }
         .line-left{
@@ -663,7 +660,6 @@ a{
       .subtitle{
         @include mq(sp){
           letter-spacing: 0.1em;
-          font-weight: 600;
           font-size: 0.8rem;
         }
       }
@@ -796,7 +792,6 @@ a{
       .subtitle{
         @include mq(sp){
           letter-spacing: 0.1em;
-          font-weight: 600;
           font-size: 0.8rem;
         }
       }
@@ -940,10 +935,7 @@ a{
         font-size: 0.7rem;
         padding-top: 15px;
         margin-bottom: 20px;
-        font-weight: 500;
-        @include mq(sp){
-          font-weight: 600;
-        }
+        font-weight: 600;
       }
     }
     .subtitle{
@@ -951,7 +943,6 @@ a{
       text-decoration: underline;
       @include mq(sp){
         font-size: 0.9rem;
-        font-weight: 600;
         letter-spacing: .1em;
       }
     }
@@ -1002,7 +993,6 @@ a{
         margin-bottom: 20px;
         @include mq(sp){
           font-size: 0.9rem;
-          font-weight: 600;
         }
       }
       .btn{
@@ -1029,13 +1019,11 @@ a{
         @include mq(sp){
           font-size: 1.5rem;
           margin-bottom: 10px;
-          font-weight: 600;
         }
       }
       .hour{
         @include mq(sp){
           font-size: 0.9rem;
-          font-weight: 600;
         }
       }
       .walk{

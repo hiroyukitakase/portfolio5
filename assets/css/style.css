@@ -285,7 +285,6 @@ a {
       @media screen and (max-width: 560px) {
         .news .inner .title-left .subtitle {
           letter-spacing: 0.1em;
-          font-weight: 600;
           font-size: 0.8rem; } }
     .news .inner .card-container {
       display: flex;
@@ -378,7 +377,6 @@ a {
   @media screen and (max-width: 560px) {
     .concept .title .subtitle {
       letter-spacing: 0.1em;
-      font-weight: 600;
       font-size: 0.8rem; } }
 
 .concept .image-frame {
@@ -423,8 +421,7 @@ a {
           .concept .image-frame .title-box .inner .titlecopy {
             font-size: 0.8rem;
             line-height: 2.0;
-            letter-spacing: 0.2em;
-            font-weight: 600; } }
+            letter-spacing: 0.2em; } }
       .concept .image-frame .title-box .inner .line-left {
         position: absolute;
         top: 20px;
@@ -577,7 +574,6 @@ a {
     @media screen and (max-width: 560px) {
       .lesson .inner .title-left .subtitle {
         letter-spacing: 0.1em;
-        font-weight: 600;
         font-size: 0.8rem; } }
   .lesson .inner .card {
     position: relative;
@@ -702,7 +698,6 @@ a {
     @media screen and (max-width: 560px) {
       .beginner .inner .title-left .subtitle {
         letter-spacing: 0.1em;
-        font-weight: 600;
         font-size: 0.8rem; } }
   .beginner .inner .card {
     position: relative;
@@ -834,17 +829,13 @@ a {
         font-size: 0.7rem;
         padding-top: 15px;
         margin-bottom: 20px;
-        font-weight: 500; }
-        @media screen and (max-width: 560px) {
-          .contact-section .inner-upper .main-title:after {
-            font-weight: 600; } }
+        font-weight: 600; }
     .contact-section .inner-upper .subtitle {
       line-height: 1.5;
       text-decoration: underline; }
       @media screen and (max-width: 560px) {
         .contact-section .inner-upper .subtitle {
           font-size: 0.9rem;
-          font-weight: 600;
           letter-spacing: .1em; } }
   .contact-section .inner-lower {
     display: flex;
@@ -889,8 +880,7 @@ a {
         margin-bottom: 20px; }
         @media screen and (max-width: 560px) {
           .contact-section .inner-lower .box .copy {
-            font-size: 0.9rem;
-            font-weight: 600; } }
+            font-size: 0.9rem; } }
       .contact-section .inner-lower .box .btn {
         display: flex;
         justify-content: center;
@@ -914,12 +904,10 @@ a {
         @media screen and (max-width: 560px) {
           .contact-section .inner-lower .box .phone {
             font-size: 1.5rem;
-            margin-bottom: 10px;
-            font-weight: 600; } }
+            margin-bottom: 10px; } }
       @media screen and (max-width: 560px) {
         .contact-section .inner-lower .box .hour {
-          font-size: 0.9rem;
-          font-weight: 600; } }
+          font-size: 0.9rem; } }
       .contact-section .inner-lower .box .walk {
         margin-bottom: 10px;
         font-weight: 600; }
