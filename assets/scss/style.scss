@@ -141,6 +141,7 @@ a{
   flex-direction: row;
   height: 200px;
   align-items: center;
+  z-index: 6;
   @include mq(md){
     height: 130px;
   }
@@ -151,6 +152,7 @@ a{
       height: 80px;
       background: $background__white__01;
       transition: .1s;
+      z-index: 4;
     }
   }
   .left{
@@ -279,6 +281,7 @@ a{
 	display:none;
 	position:fixed;
 	top:0;
+  left: 0;
 	height:100%;
 	width:100%;
 	background:rgba(51,51,51,0.7);

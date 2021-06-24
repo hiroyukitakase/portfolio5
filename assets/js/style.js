@@ -1,5 +1,6 @@
 $(document).ready(function(){
     $(".button a").click(function(){
+        event.preventDefault();
         $(".overlay").fadeToggle(200);
        $(this).toggleClass('btn-open').toggleClass('btn-close');
     });
