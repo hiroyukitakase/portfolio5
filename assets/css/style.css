@@ -548,7 +548,6 @@ a {
     margin-bottom: 50px; }
     @media screen and (max-width: 560px) {
       .lesson .inner .title-left {
-        padding: 0 5%;
         flex-direction: column;
         margin-bottom: 20px; } }
     .lesson .inner .title-left .main-title {
@@ -673,7 +672,6 @@ a {
     @media screen and (max-width: 560px) {
       .beginner .inner .title-left {
         margin-bottom: 20px;
-        padding: 0 5%;
         flex-direction: column; } }
     .beginner .inner .title-left .main-title {
       text-align: center;

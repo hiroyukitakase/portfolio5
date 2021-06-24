@@ -632,7 +632,6 @@ a{
       align-items: center;
       margin-bottom: 50px;
       @include mq(sp){
-        padding: 0 5%;
         flex-direction: column;
         margin-bottom: 20px;
       }
@@ -766,7 +765,6 @@ a{
       margin-bottom: 50px;
       @include mq(sp){
         margin-bottom: 20px;
-        padding: 0 5%;
         flex-direction: column;
       }
       .main-title{
