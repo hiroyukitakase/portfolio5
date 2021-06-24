@@ -416,7 +416,8 @@ a {
           .concept .image-frame .title-box .inner .titlecopy {
             font-size: 0.8rem;
             line-height: 2.0;
-            letter-spacing: 0.2em; } }
+            letter-spacing: 0.2em;
+            font-weight: 600; } }
       .concept .image-frame .title-box .inner .line-left {
         position: absolute;
         top: 20px;
