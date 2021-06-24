@@ -332,9 +332,7 @@ a{
           font-size: 0.7rem;
           padding-top: 5px;
           font-weight: 600;
-          @include mq(sp){
-            font-size: 0.6rem;
-          }
+          letter-spacing: 0.2em;
         }
         @include mq(sp){
           margin-right: 0;
@@ -450,6 +448,7 @@ a{
         padding-top: 5px;
         font-weight: 600;
         margin-bottom: 10px;
+        letter-spacing: 0.2em;
       }
     }
     .subtitle{
@@ -655,6 +654,7 @@ a{
           font-size: 0.7rem;
           padding-top: 5px;
           font-weight: 600;
+          letter-spacing: 0.2em;
         }
       }
       .subtitle{
@@ -787,6 +787,7 @@ a{
           font-size: 0.7rem;
           padding-top: 5px;
           font-weight: 600;
+          letter-spacing: 0.2em;
         }
       }
       .subtitle{
@@ -933,8 +934,9 @@ a{
         content: 'CONTACT';
         display: block;
         font-size: 0.7rem;
-        padding-top: 15px;
+        padding-top: 10px;
         margin-bottom: 20px;
+        letter-spacing: 0.2em;
         font-weight: 600;
       }
     }
