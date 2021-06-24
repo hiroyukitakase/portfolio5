@@ -978,15 +978,13 @@ a {
         font-weight: 600; }
         @media screen and (max-width: 560px) {
           .contact-section .inner-lower .box .walk {
-            font-size: 0.8rem;
-            letter-spacing: .2em; } }
+            font-size: 0.9rem; } }
       .contact-section .inner-lower .box .address {
         margin-bottom: 20px;
         font-weight: 600; }
         @media screen and (max-width: 560px) {
           .contact-section .inner-lower .box .address {
-            font-size: 0.8rem;
-            letter-spacing: .2em; } }
+            font-size: 0.9rem; } }
       .contact-section .inner-lower .box .map {
         display: flex;
         justify-content: center;
