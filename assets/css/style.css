@@ -257,7 +257,8 @@ a {
       @media screen and (max-width: 560px) {
         .news .inner .title-left {
           padding: 0 5%;
-          flex-direction: column; } }
+          flex-direction: column;
+          margin-bottom: 20px; } }
       .news .inner .title-left .main-title {
         text-align: center;
         margin-right: 30px;
@@ -353,6 +354,9 @@ a {
   flex-direction: column;
   align-items: center;
   margin-bottom: 50px; }
+  @media screen and (max-width: 560px) {
+    .concept .title {
+      margin-bottom: 20px; } }
   .concept .title .main-title {
     text-align: center;
     font-size: 1.2rem; }
@@ -542,7 +546,7 @@ a {
       .lesson .inner .title-left {
         padding: 0 5%;
         flex-direction: column;
-        margin-bottom: 30px; } }
+        margin-bottom: 20px; } }
     .lesson .inner .title-left .main-title {
       text-align: center;
       margin-right: 30px;
@@ -664,7 +668,7 @@ a {
     margin-bottom: 50px; }
     @media screen and (max-width: 560px) {
       .beginner .inner .title-left {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         padding: 0 5%;
         flex-direction: column; } }
     .beginner .inner .title-left .main-title {
