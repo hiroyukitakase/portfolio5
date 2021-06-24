@@ -483,12 +483,12 @@ a{
           font-size: 1.2rem;
           height: 100%;
           line-height: 2.5;
-          letter-spacing: .1rem;
+          letter-spacing: .1em;
           text-align: center;
           @include mq(sp){
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             line-height: 2.0;
-            letter-spacing: 0rem;
+            letter-spacing: 0.2em;
           }
         }
         .line-left{
@@ -886,6 +886,9 @@ a{
   @include mq(md){
     height: 1100px;
   }
+  @include mq(sp){
+    height: auto;
+  }
   &:before{
   background-color: rgba(0,0,0,0.5);
   position: absolute;
@@ -903,13 +906,16 @@ a{
     box-sizing: border-box;
     padding: 50px 20px;
     @include mq(md){
-      padding: 100px 20px 30px;
+      padding: 50px 2.5% 30px;
       width: 300px;
     }
     .main-title{
       text-align: center;
       margin-right: 30px;
       font-size: 1.2rem;
+      @include mq(sp){
+        margin-right: 0px;
+      }
       &:after{
         @include serif_font;
         content: 'CONTACT';
@@ -923,6 +929,9 @@ a{
     }
     .subtitle{
       line-height: 1.5;
+      @include mq(sp){
+        font-size: 0.9rem;
+      }
     }
   }
   .inner-lower{
@@ -945,6 +954,10 @@ a{
         border-right: none;
         border-bottom: 1px solid #bbb;
       }
+      @include mq(sp){
+        border-bottom: none;
+        padding: 30px 20px;
+      }
       &:last-child{
         border-right: none;
         @include mq(md){
@@ -957,10 +970,17 @@ a{
         .icon{
           width: 52px;
           height: 52px;
+          @include mq(sp){
+            width: 36px;
+            height: 36px;
+          }
         }
       }
       .copy{
         margin-bottom: 20px;
+        @include mq(sp){
+          font-size: 0.9rem;
+        }
       }
       .btn{
         display: flex;
@@ -974,13 +994,24 @@ a{
         font-size: 1.4rem;
         font-weight: 600;
         margin: 0 auto;
+        @include mq(sp){
+          width: 70%;
+          height: 40px;
+          font-size: 1.0rem;
+        }
       }
       .phone{
         font-size: 36px;
         margin-bottom: 5px;
+        @include mq(sp){
+          font-size: 1.5rem;
+          margin-bottom: 10px;
+        }
       }
       .hour{
-
+        @include mq(sp){
+          font-size: 0.9rem;
+        }
       }
       .walk{
         margin-bottom: 10px;
@@ -999,6 +1030,10 @@ a{
         font-size: 1.1rem;
         font-weight: 600;
         margin: 0 auto;
+        @include mq(sp){
+          font-size: 0.9rem;
+          height: 35px;
+        }
       }
     }
   }
