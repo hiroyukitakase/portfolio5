@@ -146,10 +146,10 @@ a{
   }
   @include mq(sp){
     position: fixed;
-    background: $background__white__01;
     transition: .1s;
     &.fixed{
       height: 80px;
+      background: $background__white__01;
       transition: .1s;
     }
   }

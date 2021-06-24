@@ -75,10 +75,10 @@ a {
   @media screen and (max-width: 560px) {
     .header {
       position: fixed;
-      background: #ffffff;
       transition: .1s; }
       .header.fixed {
         height: 80px;
+        background: #ffffff;
         transition: .1s; } }
   .header .left {
     padding-left: 5%;
