@@ -531,11 +531,16 @@ a {
     margin-bottom: 50px; }
     @media screen and (max-width: 960px) {
       .concept .inner .title {
+        font-size: 1.0rem;
         margin-bottom: 20px; } }
   .concept .inner .copy {
     line-height: 1.5;
     margin-bottom: 30px;
-    letter-spacing: 0.1em; }
+    letter-spacing: 0.1em;
+    font-size: 1.0rem; }
+    @media screen and (max-width: 560px) {
+      .concept .inner .copy {
+        font-size: 0.9rem; } }
   .concept .inner .btn {
     display: flex;
     justify-content: center;
@@ -944,9 +949,15 @@ a {
       .contact-section .inner-lower .box .walk {
         margin-bottom: 10px;
         font-weight: 600; }
+        @media screen and (max-width: 560px) {
+          .contact-section .inner-lower .box .walk {
+            font-size: 0.9rem; } }
       .contact-section .inner-lower .box .address {
         margin-bottom: 20px;
         font-weight: 600; }
+        @media screen and (max-width: 560px) {
+          .contact-section .inner-lower .box .address {
+            font-size: 0.9rem; } }
       .contact-section .inner-lower .box .map {
         display: flex;
         justify-content: center;

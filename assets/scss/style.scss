@@ -619,6 +619,7 @@ a{
       font-size: 1.2rem;
       margin-bottom: 50px;
       @include mq(md){
+        font-size: 1.0rem;
         margin-bottom: 20px;
       }
     }
@@ -626,6 +627,10 @@ a{
       line-height: 1.5;
       margin-bottom: 30px;
       letter-spacing: 0.1em;
+      font-size: 1.0rem;
+      @include mq(sp){
+        font-size: 0.9rem;
+      }
     }
     .btn{
       @include btn_base($c: $color__white__01, $fs: 1.4rem, $fw: 600, $w: 300px, $h: 60px, $bg: $background__black__01);
@@ -1005,10 +1010,16 @@ a{
       .walk{
         margin-bottom: 10px;
         font-weight: 600;
+        @include mq(sp){
+          font-size: 0.9rem;
+        }
       }
       .address{
         margin-bottom: 20px;
         font-weight: 600;
+        @include mq(sp){
+          font-size: 0.9rem;
+        }
       }
       .map{
       @include btn_base($c: $color__black__01, $fs: 1.1rem, $fw: 600, $w: 150px, $h: 40px, $bg: $background__white__01);
