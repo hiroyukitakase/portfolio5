@@ -81,7 +81,10 @@ a {
         height: 80px;
         background: #ffffff;
         transition: .1s;
-        z-index: 4; } }
+        z-index: 4; }
+        .header.fixed .left {
+          min-width: 180px;
+          transition: .2s; } }
   .header .left {
     padding-left: 5%;
     width: 12%;
@@ -186,10 +189,6 @@ a {
         -moz-transition: all .2s linear 0s;
         -webkit-transition: all .2s linear 0s;
         -o-transition: all .2s linear 0s; }
-
-.header.fixed .left {
-  min-width: 180px;
-  transition: .2s; }
 
 .overlay {
   display: none;
@@ -896,7 +895,8 @@ a {
         padding-top: 10px;
         margin-bottom: 15px; }
     .contact-section .inner-upper .subtitle {
-      line-height: 1.5;
+      line-height: 2.0;
+      text-align: center;
       text-decoration: underline;
       letter-spacing: 0.1em; }
       @media screen and (max-width: 560px) {

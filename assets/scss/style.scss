@@ -153,6 +153,10 @@ a{
       background: $background__white__01;
       transition: .1s;
       z-index: 4;
+      & .left{
+        min-width: 180px;
+        transition: .2s;
+      }
     }
   }
   .left{
@@ -270,11 +274,6 @@ a{
       }
     }
   }
-}
-
-.header.fixed .left{
-  min-width: 180px;
-  transition: .2s;
 }
 
 .overlay {
@@ -959,7 +958,8 @@ a{
       }
     }
     .subtitle{
-      line-height: 1.5;
+      line-height: 2.0;
+      text-align: center;
       text-decoration: underline;
       @include subtitle;
     }
