@@ -380,6 +380,9 @@ a {
   margin-bottom: 50px;
   position: relative;
   z-index: -1; }
+  @media screen and (max-width: 560px) {
+    .concept .image-frame {
+      margin-bottom: 30px; } }
   .concept .image-frame .title-box {
     position: absolute;
     top: 50%;
@@ -499,7 +502,7 @@ a {
     margin-bottom: 50px; }
     @media screen and (max-width: 960px) {
       .concept .inner .title {
-        margin-bottom: 30px; } }
+        margin-bottom: 20px; } }
   .concept .inner .copy {
     line-height: 1.5;
     margin-bottom: 30px;
