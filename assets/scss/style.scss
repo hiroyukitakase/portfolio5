@@ -143,7 +143,15 @@ a{
   align-items: center;
   @include mq(md){
     height: 130px;
-
+  }
+  @include mq(sp){
+    position: fixed;
+    background: $background__white__01;
+    transition: .1s;
+    &.fixed{
+      height: 80px;
+      transition: .1s;
+    }
   }
   .left{
     padding-left: 5%;
@@ -158,6 +166,9 @@ a{
     }
     @include mq(sp){
       min-width: 200px;
+      &.fixed{
+
+      }
     }
     .logo-img-container{
       width: 60%;
@@ -281,6 +292,11 @@ a{
   @include mq(md){
     height: 450px;
   }
+  @include mq(sp){
+    height: 650px;
+    box-sizing: border-box;
+    padding-top: 130px;
+  }
   .letter-container{
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
@@ -310,6 +326,9 @@ a{
       left: 0;
       transform: none;
     }
+    @include mq(sp){
+      top: 130px;
+    }
     .image{
       width: 100%;
       height: 100%;
@@ -329,6 +348,9 @@ a{
       top: 50px;
       right: 0;
       height: 400px;
+    }
+    @include mq(sp){
+      top: 180px;
     }
   }
 }

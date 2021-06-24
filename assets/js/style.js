@@ -9,3 +9,15 @@ $('.overlay').on('click', function(){
     $(".button a").toggleClass('btn-open').toggleClass('btn-close');
     open = false;
 });
+
+
+$(function() {
+    var $header = $('.header');
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 50) {
+            $header.addClass('fixed');
+        } else {
+            $header.removeClass('fixed');
+        }
+    });
+});
