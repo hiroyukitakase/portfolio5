@@ -329,6 +329,36 @@ a {
           background-image: url("../../assets/img/firstview-03.jpg"); }
       .hero .carousel-wrapper .carousel:hover {
         animation-play-state: paused; }
+    .hero .carousel-wrapper .indicator-container {
+      position: absolute;
+      bottom: -30px;
+      right: 0%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 110px;
+      overflow: hidden; }
+      .hero .carousel-wrapper .indicator-container .indicator {
+        width: 30px;
+        height: 2px;
+        background: #fff;
+        overflow: hidden;
+        z-index: 2; }
+      .hero .carousel-wrapper .indicator-container .indicator-between {
+        width: 10px;
+        height: 2px;
+        background: #d1af7e;
+        overflow: hidden;
+        z-index: 4; }
+      .hero .carousel-wrapper .indicator-container .active-line {
+        position: absolute;
+        top: 0;
+        left: 0px;
+        height: 2px;
+        width: 30px;
+        background: #333333;
+        animation: sliding-line 12s infinite;
+        z-index: 3; }
   .hero .background {
     position: absolute;
     top: 30%;
@@ -346,38 +376,6 @@ a {
     @media screen and (max-width: 560px) {
       .hero .background {
         top: 180px; } }
-
-.indicator-container {
-  position: absolute;
-  bottom: -30px;
-  right: 0%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 110px;
-  overflow: hidden; }
-  .indicator-container .indicator {
-    width: 30px;
-    height: 2px;
-    background: #fff;
-    overflow: hidden;
-    z-index: 2; }
-  .indicator-container .indicator-between {
-    width: 10px;
-    height: 2px;
-    background: #d1af7e;
-    overflow: hidden;
-    z-index: 4; }
-
-.active-line {
-  position: absolute;
-  top: 0;
-  left: 0px;
-  height: 2px;
-  width: 30px;
-  background: #333333;
-  animation: sliding-line 12s infinite;
-  z-index: 3; }
 
 .news {
   margin-bottom: 100px; }
@@ -440,7 +438,8 @@ a {
       @media screen and (max-width: 560px) {
         .news .inner .card-container {
           display: block;
-          overflow-x: auto;
+          overflow-x: scroll;
+          -webkit-overflow-scrolling: touch;
           white-space: nowrap; } }
       .news .inner .card-container .card {
         width: 20%; }

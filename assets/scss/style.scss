@@ -447,6 +447,40 @@ a{
         animation-play-state: paused;
       }
     }
+    .indicator-container{
+      position: absolute;
+      bottom: -30px;
+      right: 0%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 110px;
+      overflow: hidden;
+      .indicator{
+        width: 30px;
+        height: 2px;
+        background: #fff;
+        overflow: hidden;
+        z-index: 2;
+      }
+      .indicator-between{
+        width: 10px;
+        height: 2px;
+        background: $color__theme;
+        overflow: hidden;
+        z-index: 4;
+      }
+      .active-line{
+        position: absolute;
+        top: 0;
+        left: 0px;
+        height: 2px;
+        width: 30px;
+        background: $background__black__01;
+        animation: sliding-line 12s infinite;
+        z-index: 3;
+      }
+    }
   }
 
   .background{
@@ -467,41 +501,6 @@ a{
       top: 180px;
     }
   }
-}
-
-.indicator-container{
-  position: absolute;
-  bottom: -30px;
-  right: 0%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 110px;
-  overflow: hidden;
-  .indicator{
-    width: 30px;
-    height: 2px;
-    background: #fff;
-    overflow: hidden;
-    z-index: 2;
-  }
-  .indicator-between{
-    width: 10px;
-    height: 2px;
-    background: $color__theme;
-    overflow: hidden;
-    z-index: 4;
-  }
-}
-.active-line{
-  position: absolute;
-  top: 0;
-  left: 0px;
-  height: 2px;
-  width: 30px;
-  background: $background__black__01;
-  animation: sliding-line 12s infinite;
-  z-index: 3;
 }
 
 .news{
@@ -552,8 +551,9 @@ a{
       }
       @include mq(sp){
         display: block;
-        overflow-x: auto;
-      	white-space: nowrap;
+        overflow-x:scroll;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
       }
       .card{
         width: 20%;
