@@ -45,6 +45,49 @@ $color__theme: #d1af7e;
 $background__black__01: #333333;
 $background__white__01: #ffffff;
 
+$size-width: 600px;
+$size-height: 400px;
+
+@keyframes sliding {
+  30% {
+    transform: translateX(0);
+  }
+  35% {
+    transform: translateX(-$size-width);
+  }
+  65% {
+    transform: translateX(-$size-width);
+  }
+  70% {
+    transform: translateX(-$size-width * 2);
+  }
+  98% {
+    transform: translateX(-$size-width * 2);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes sliding-responsive {
+  30% {
+    transform: translateX(0);
+  }
+  35% {
+    transform: translateX(calc(-100% / 3));
+  }
+  65% {
+    transform: translateX(calc(-100% / 3));
+  }
+  70% {
+    transform: translateX(-100% / 3 * 2);
+  }
+  98% {
+    transform: translateX(-100% / 3 * 2);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 
 $breakpoints: (
   'sp': 'screen and (max-width: 560px)',
@@ -318,36 +361,70 @@ a{
       display: none;
     }
   }
-  // .carousel {
-  //   position: absolute;
-  //   top: 0%;
-  //   right: 50%;
-  //   width: 600px;
-  //   height: 400px;
-  //   transform: translate(50%, 0);
-  //   @include mq(md){
-  //     width: 90%;
-  //     top: 0;
-  //     left: 0;
-  //     transform: none;
-  //   }
-  //   @include mq(sp){
-  //     top: 130px;
-  //   }
-  //   .image{
-  //     width: 100%;
-  //     height: 100%;
-  //     object-fit: cover;
-  //     background-image: url(../../assets/img/firstview-01.jpeg);
-  //     background-repeat: no-repeat;
-  //   }
-  // }
+  .carousel-wrapper {
+    position: absolute;
+    top: 0%;
+    right: 50%;
+    width: $size-width;
+    height: $size-height;
+    transform: translate(50%, 0);
+    @include mq(md){
+      width: 90%;
+      top: 0;
+      left: 0;
+      transform: none;
+    }
+    @include mq(sp){
+      top: 130px;
+    }
+    .carousel-container {
+      width: $size-width;
+      height: $size-height;
+      overflow: hidden;
+      margin: 0 auto;
+      position: relative;
+      @include mq(md){
+        width: 100%;
+      }
+    }
+    .carousel {
+      display: flex;
+      width: $size-width * 3;
+      animation: sliding 12s infinite;
+      @include mq(md){
+        animation: sliding-responsive 12s infinite;
+        width: 300%;
+      }
+      .image {
+        width: $size-width;
+        height: $size-height;
+        background-size: cover;
+        background-position: center;
+        @include mq(md){
+          width: 100%;
+        }
+        &.image-one {
+          background-image: url("../../assets/img/firstview-01.jpeg");
+        }
+        &.image-two {
+          background-image: url("../../assets/img/firstview-02.jpeg");
+        }
+        &.image-three {
+          background-image: url("../../assets/img/firstview-03.jpg");
+        }
+      }
+      &:hover {
+        animation-play-state: paused;
+      }
+    }
+  }
+
   .background{
     position: absolute;
     top: 30%;
-    right: 20%;
-    width: 400px;
-    height: 300px;
+    right: 15%;
+    width: 600px;
+    height: 350px;
     background: $color__theme;
     z-index: -1;
     @include mq(md){
@@ -359,22 +436,23 @@ a{
     @include mq(sp){
       top: 180px;
     }
-    .indicator-container{
-      position: absolute;
-      bottom: 20px;
-      right: 10%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      width: 70px;
-      .indicator{
-        width: 30px;
-        height: 2px;
-        background: #fff;
-        &.active{
-          background: $color__black__01;
-        }
-      }
+  }
+}
+
+.indicator-container{
+  position: absolute;
+  bottom: -30px;
+  right: 0%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 110px;
+  .indicator{
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    &.active{
+      background: $color__black__01;
     }
   }
 }
@@ -511,113 +589,6 @@ a{
     }
   }
 }
-
-
-$size-width: 600px;
-$size-height: 400px;
-
-$size-width-md: 100% / 3;
-
-.carousel-wrapper {
-  position: absolute;
-  top: 0%;
-  right: 50%;
-  width: $size-width;
-  height: $size-height;
-  transform: translate(50%, 0);
-  @include mq(md){
-    width: 90%;
-    top: 0;
-    left: 0;
-    transform: none;
-  }
-  @include mq(sp){
-    top: 130px;
-  }
-}
-
-.carousel-container {
-  width: $size-width;
-  height: $size-height;
-  overflow: hidden;
-  margin: 0 auto;
-  @include mq(md){
-    width: 100%;
-  }
-}
-
-.carousel {
-  display: flex;
-  width: $size-width * 3;
-  animation: sliding 12s infinite;
-  @include mq(md){
-    animation: sliding-md 12s infinite;
-    width: 300%;
-  }
-  .image {
-    width: $size-width;
-    height: $size-height;
-    background-size: cover;
-    background-position: center;
-    @include mq(md){
-      width: 100%;
-    }
-  }
-  &:hover {
-    animation-play-state: paused;
-  }
-  .image-one {
-    background-image: url("../../assets/img/firstview-01.jpeg");
-  }
-  .image-two {
-    background-image: url("../../assets/img/firstview-02.jpeg");
-  }
-  .image-three {
-    background-image: url("../../assets/img/firstview-03.jpg");
-  }
-}
-
-@keyframes sliding {
-  30% {
-    transform: translateX(0);
-  }
-  35% {
-    transform: translateX(-$size-width);
-  }
-  65% {
-    transform: translateX(-$size-width);
-  }
-  70% {
-    transform: translateX(-$size-width * 2);
-  }
-  98% {
-    transform: translateX(-$size-width * 2);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-@keyframes sliding-md {
-  30% {
-    transform: translateX(0);
-  }
-  35% {
-    transform: translateX(calc(-100% / 3));
-  }
-  65% {
-    transform: translateX(calc(-100% / 3));
-  }
-  70% {
-    transform: translateX(-100% / 3 * 2);
-  }
-  98% {
-    transform: translateX(-100% / 3 * 2);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
 
 .concept{
   .title{
