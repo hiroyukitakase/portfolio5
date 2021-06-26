@@ -362,8 +362,14 @@ a{
       flex-direction: column;
       text-align: center;
       margin-bottom: 30px;
+      @include mq(sp){
+        margin-bottom: 20px;
+      }
       li{
         margin-bottom: 30px;
+        @include mq(sp){
+          margin-bottom: 20px;
+        }
       }
       li a {
         color: $color__white__01;

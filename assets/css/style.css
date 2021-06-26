@@ -254,8 +254,14 @@ a {
       flex-direction: column;
       text-align: center;
       margin-bottom: 30px; }
+      @media screen and (max-width: 560px) {
+        .overlay .overlay-inner .upper-container {
+          margin-bottom: 20px; } }
       .overlay .overlay-inner .upper-container li {
         margin-bottom: 30px; }
+        @media screen and (max-width: 560px) {
+          .overlay .overlay-inner .upper-container li {
+            margin-bottom: 20px; } }
       .overlay .overlay-inner .upper-container li a {
         color: #ffffff;
         font-weight: 600;
