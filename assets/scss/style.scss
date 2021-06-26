@@ -349,104 +349,103 @@ a{
 	background:rgba(51,51,51,0.7);
 	overflow:auto;
 	z-index:10;
-  .upper-container{
+  .overlay-inner{
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 50%;
-    transform: translate(-50%, 0);
     width: 100%;
-    height: 40%;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    text-align: center;
-    li a {
-      color: $color__white__01;
-      font-weight: 600;
-      text-decoration: underline;
-    }
-    @include mq(sp){
-      top: 10%;
-      height: 60%;
-    }
-  }
-  .lower-container{
-    position: absolute;
-    top: 70%;
-    left: 50%;
+    height: 80%;
     transform: translate(-50%, 0);
-    width: 100%;
-    height: 7%;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    @include mq(sp){
-      top: 75%;
-    }
-    .reserve-btn{
-      display: block;
-      height: 100%;
-      width: 40%;
-      background: $background__white__01;
+    .upper-container{
       display: flex;
-      justify-content: center;
-      align-items: center;
-      .inner{
+      justify-content: space-around;
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 30px;
+      li{
+        margin-bottom: 30px;
+      }
+      li a {
+        color: $color__white__01;
+        font-weight: 600;
+        text-decoration: underline;
+      }
+    }
+    .lower-container{
+      width: 100%;
+      height: 10%;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      @include mq(sp){
+        top: 75%;
+      }
+      .reserve-btn{
+        display: block;
+        height: 100%;
+        width: 40%;
+        background: $background__white__01;
         display: flex;
-        flex-direction: row;
         justify-content: center;
         align-items: center;
-        .calender-icon{
-          width: 26px;
-          height: 26px;
-          margin-right: 10px;
-          @include mq(sp){
-            width: 22px;
-            height: 22px;
+        .inner{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          .calender-icon{
+            width: 26px;
+            height: 26px;
+            margin-right: 10px;
+            @include mq(sp){
+              width: 22px;
+              height: 22px;
+            }
           }
-        }
-        .letter{
-          font-weight: 600;
-          font-size: 1.0rem;
-          color: #000;
-          @include mq(sp){
-            font-size: 0.9rem;
+          .letter{
+            font-weight: 600;
+            font-size: 1.0rem;
+            color: #000;
+            @include mq(sp){
+              font-size: 0.9rem;
+            }
           }
         }
       }
-    }
-    .instagram-btn{
-      display: block;
-      height: 100%;
-      width: 40%;
-      background: $color__theme;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .inner{
+      .instagram-btn{
+        display: block;
+        height: 100%;
+        width: 40%;
+        background: $color__theme;
         display: flex;
-        flex-direction: row;
         justify-content: center;
         align-items: center;
-        .sns-icon{
-          width: 26px;
-          height: 26px;
-          margin-right: 10px;
-          @include mq(sp){
-            width: 22px;
-            height: 22px;
+        .inner{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          .sns-icon{
+            width: 26px;
+            height: 26px;
+            margin-right: 10px;
+            @include mq(sp){
+              width: 22px;
+              height: 22px;
+            }
           }
-        }
-        .letter{
-          font-weight: 600;
-          font-size: 1.0rem;
-          @include mq(sp){
-            font-size: 0.9rem;
+          .letter{
+            font-weight: 600;
+            font-size: 1.0rem;
+            @include mq(sp){
+              font-size: 0.9rem;
+            }
           }
         }
       }
     }
   }
+
   .overlay-button{
     position: absolute;
     top: 85%;
