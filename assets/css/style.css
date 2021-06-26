@@ -256,6 +256,10 @@ a {
       color: #ffffff;
       font-weight: 600;
       text-decoration: underline; }
+    @media screen and (max-width: 560px) {
+      .overlay .upper-container {
+        top: 10%;
+        height: 60%; } }
   .overlay .lower-container {
     position: absolute;
     top: 70%;
@@ -266,6 +270,9 @@ a {
     display: flex;
     justify-content: space-around;
     flex-direction: row; }
+    @media screen and (max-width: 560px) {
+      .overlay .lower-container {
+        top: 75%; } }
     .overlay .lower-container .reserve-btn {
       display: block;
       height: 100%;
@@ -283,10 +290,17 @@ a {
           width: 26px;
           height: 26px;
           margin-right: 10px; }
+          @media screen and (max-width: 560px) {
+            .overlay .lower-container .reserve-btn .inner .calender-icon {
+              width: 22px;
+              height: 22px; } }
         .overlay .lower-container .reserve-btn .inner .letter {
           font-weight: 600;
           font-size: 1.0rem;
           color: #000; }
+          @media screen and (max-width: 560px) {
+            .overlay .lower-container .reserve-btn .inner .letter {
+              font-size: 0.9rem; } }
     .overlay .lower-container .instagram-btn {
       display: block;
       height: 100%;
@@ -304,19 +318,29 @@ a {
           width: 26px;
           height: 26px;
           margin-right: 10px; }
+          @media screen and (max-width: 560px) {
+            .overlay .lower-container .instagram-btn .inner .sns-icon {
+              width: 22px;
+              height: 22px; } }
         .overlay .lower-container .instagram-btn .inner .letter {
           font-weight: 600;
           font-size: 1.0rem; }
+          @media screen and (max-width: 560px) {
+            .overlay .lower-container .instagram-btn .inner .letter {
+              font-size: 0.9rem; } }
   .overlay .overlay-button {
     position: absolute;
     top: 85%;
     left: 50%;
-    transform: translate(-50%, 0); }
+    transform: translate(-50%, 0);
+    font-size: 48px; }
+    @media screen and (max-width: 560px) {
+      .overlay .overlay-button {
+        font-size: 28px; } }
     .overlay .overlay-button .btn-close:after {
       color: #fff;
       font-family: "Font Awesome 5 Free";
       font-weight: 900;
-      font-size: 48px;
       content: "\f00d";
       transition-property: all .2s linear 0s;
       -moz-transition: all .2s linear 0s;
