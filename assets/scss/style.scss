@@ -366,7 +366,7 @@ a{
       text-align: center;
       margin-bottom: 30px;
       @include mq(sp){
-        margin-bottom: 20px;
+        margin-bottom: 10px;
       }
       li{
         margin-bottom: 30px;
@@ -387,7 +387,7 @@ a{
       justify-content: space-around;
       flex-direction: row;
       @include mq(sp){
-        top: 75%;
+        height: 15%;
       }
       .reserve-btn{
         display: block;
@@ -457,7 +457,7 @@ a{
 
   .overlay-button{
     position: absolute;
-    top: 85%;
+    top: 88%;
     left: 50%;
     transform: translate(-50%, 0);
     font-size: 48px;
