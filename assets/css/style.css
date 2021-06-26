@@ -240,7 +240,7 @@ a {
   width: 100%;
   background: rgba(51, 51, 51, 0.7);
   overflow: auto;
-  z-index: 5; }
+  z-index: 10; }
   .overlay .upper-container {
     position: absolute;
     top: 25%;
