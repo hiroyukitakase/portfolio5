@@ -254,7 +254,8 @@ a {
     text-align: center; }
     .overlay .upper-container li a {
       color: #ffffff;
-      font-weight: 600; }
+      font-weight: 600;
+      text-decoration: underline; }
   .overlay .lower-container {
     position: absolute;
     top: 70%;
