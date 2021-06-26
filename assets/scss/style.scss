@@ -361,7 +361,8 @@ a{
     flex-direction: column;
     text-align: center;
     li a {
-      color: $color__white__01
+      color: $color__white__01;
+      font-weight: 600;
     }
   }
   .lower-container{
@@ -426,7 +427,7 @@ a{
       }
     }
   }
-  .button{
+  .overlay-button{
     position: absolute;
     top: 85%;
     left: 50%;
