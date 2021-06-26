@@ -259,7 +259,7 @@ a {
       margin-bottom: 30px; }
       @media screen and (max-width: 560px) {
         .overlay .overlay-inner .upper-container {
-          margin-bottom: 10px; } }
+          margin-bottom: 20px; } }
       .overlay .overlay-inner .upper-container li {
         margin-bottom: 30px; }
         @media screen and (max-width: 560px) {
